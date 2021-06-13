@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+#Form_wrapper
+# Title
+# Short Description
+# button-primary
+#text underlne
+ */
+
+
+//Form_wrapper
+.Form_wrapper{
+
+}
+
+
+//Title
+.Title{
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 30px;
+  color: #2f2424;
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+  }
+}
+
+
+
+
+// Short Description
+.short_description{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  padding-bottom: 5px;
+}
+
+
+
+
+//button-primary
+.button-primary , .wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover{
+  margin-top: 10px !important;
+  border-radius: 0 !important;
+  padding: 2px 20px !important;
+  font-size: 14px !important;
+  background: #1d2327 !important;
+  border: 1px solid #1d2327 !important;
+  transition: 0.5s all ease-in;
+
+  &:hover{
+    background: #2271b1 !important;
+    border-radius: 0;
+    border: 1px solid #2271b1 !important;
+  }
+}
+
+
+
+
+
+// text udnerline
+.text-underline{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
