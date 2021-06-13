@@ -4,7 +4,7 @@ This plugin change your site url and home url localhost to your ip or another ur
 
 = Features Include: =
 
-* You can change your site url and home url localhost to your current ip address (Like if your site your is http://localhost/your-projec/ then it will be change to http:192.168.0.1/your-project
+* You can change your site url and home url localhost to your current ip address (Like if your site your is http://localhost/your-project/ then it will be change to http:192.168.0.1/your-project
 > 192.168.0.1 will be your current ip address
 
 
