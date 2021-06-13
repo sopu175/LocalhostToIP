@@ -18,7 +18,9 @@ This section describes how to install the plugin and get it working.
 
 ![image](https://user-images.githubusercontent.com/83091643/121818434-fb712380-cca8-11eb-9f02-9281f951345a.png)
 
+
 4. After clicking Update IP Button your localhost url will change to your ip
+
 
 ![image](https://user-images.githubusercontent.com/83091643/121818499-628ed800-cca9-11eb-83e2-d41a1ad6f1bb.png)
 
