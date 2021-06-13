@@ -22,9 +22,15 @@
 
         <?php
         echo "<h2 class='Title'>Localhost to IP</h2>";
-        echo '<h3 class="short_description">If your site url is <span class="text-underline">' . get_home_url() . '</span> then it will be change to <span class="text-underline">' . str_replace("localhost", $ip, get_home_url()) . '</span></h3>';
+
         if($check_localhost == true){
+            echo '<h3 class="short_description">If your site url is <span class="text-underline">' . get_home_url() . '</span> then it will be change to <span class="text-underline">' . str_replace($ip, "localhost", get_home_url()) . '</span></h3>';
+
             echo "Please make sure your site url is ". get_home_url();
+        }
+        else{
+            echo '<h3 class="short_description">If your site url is <span class="text-underline">' . get_home_url() . '</span> then it will be change to <span class="text-underline">' . str_replace("localhost", $ip, get_home_url()) . '</span></h3>';
+
         }
         ?>
 
@@ -65,7 +71,7 @@ if (isset($_POST['submit'])) {
         $execut2 = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 2));
 
         if (($execut > 0) && ($execut2)) {
-            echo "Successfully Updated <br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
+            echo "Successfully Updated Your site url is now " .$url."<br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
 
         } else {
             exit(var_dump($wpdb->last_query));
@@ -86,7 +92,7 @@ if (isset($_POST['submit'])) {
         $execut2 = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 2));
 
         if (($execut > 0) && ($execut2)) {
-            echo "Successfully Updated <br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
+            echo "Successfully Updated Your site url is now " .$url."<br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
 
         } else {
             exit(var_dump($wpdb->last_query));
