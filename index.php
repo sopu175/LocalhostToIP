@@ -11,9 +11,9 @@
  * Plugin Name:       localhost to IP
  * Plugin URI:        https://github.com/sopu175
  * Description:       This plugin change your site url and home url localhost to your ip or another url. You can share your localhost wordpress site via ip address or another url.
- * Version:           1.0.0
+ * Version:           1.0
  * Requires at least: 5.2
- * Requires PHP:      7.2
+ * Requires PHP:      7.0
  * Author:            Saif Islam
  * Author URI:        https://www.facebook.com/saif2456/
  * Text Domain:       ltp

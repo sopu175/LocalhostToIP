@@ -65,14 +65,17 @@ if (isset($_POST['submit'])) {
         $ip = sanitize_text_field($ip);
         $url = str_replace("localhost", $ip, get_home_url());
 
-
-        echo "<br>";
         $execut = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 1));
         $execut2 = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 2));
 
         if (($execut > 0) && ($execut2)) {
-            echo "Successfully Updated Your site url is now " .$url."<br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
-
+            printf(
+            esc_html__('Successfully Updated Your site url is now ' . $url ,'ltp'));
+            printf(
+                '<br><a href="%s/wp-admin">%s</a>',
+                esc_url( $url),
+                esc_html__( 'Click to Login', 'ltp' )
+            );
         } else {
             exit(var_dump($wpdb->last_query));
         }
@@ -86,14 +89,12 @@ if (isset($_POST['submit'])) {
         $ip = sanitize_text_field($ip);
         $url = str_replace($ip, "localhost", get_home_url());
 
-
-        echo "<br>";
         $execut = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 1));
         $execut2 = $wpdb->query($wpdb->prepare("UPDATE $table_name SET option_value = %s WHERE option_id = %s ", $url, 2));
 
         if (($execut > 0) && ($execut2)) {
-            echo "Successfully Updated Your site url is now " .$url."<br>" . "Click to login dashboard <a href=' " . $url . "/wp-admin" . "'>Login to Dashboard</a>";
-
+            printf(esc_html__('Successfully Updated Your site url is now' . $url  ,'ltp'));
+            printf('<br><a href="%s/wp-admin">%s</a>', esc_url( $url), esc_html__( 'Click to Login', 'ltp' ) );
         } else {
             exit(var_dump($wpdb->last_query));
         }

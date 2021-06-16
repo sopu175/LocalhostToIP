@@ -13,7 +13,7 @@ class ltpform{
         $capability = 'manage_options';
         $slug = 'ltp_admin';
         $callback = array($this, 'ltp_admin_content');
-        add_menu_page($page_title, $menu_title, $capability, $slug, $callback);
+        add_menu_page($page_title, $menu_title, $capability, $slug, $callback , 'dashicons-visibility');
     }
 
 
