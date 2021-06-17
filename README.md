@@ -1,10 +1,10 @@
 # localhostToIP
-This wordpress plugin change your site url and home url localhost to your ip or another url. You can share your localhost wordpress site via ip address or another url.
+This  [wordpress plugin](https://wordpress.org/plugins/localhost-to-ip/) changes your site url and home url localhost to your ip or another url. You can share your localhost wordpress site via ip address or another url.
 
 
 = Features Include: =
 
-* You can change your site url and home url localhost to your current ip address (Like if your site your is http://localhost/your-project/ then it will be change to http:192.168.0.1/your-project
+* You can changes your site url and home url localhost to your current ip address (Like if your site your is http://localhost/your-project/ then it will be change to http:192.168.0.1/your-project
 > 192.168.0.1 will be your current ip address
 
 
